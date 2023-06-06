@@ -1,5 +1,4 @@
 
-import './App.css';
 
 import { useState, useEffect } from 'react';
 import { filterArr ,data } from './data';
@@ -44,7 +43,7 @@ function App() {
   }, [filters]);
 
   return (
-    <div className="App">
+    <div>
       <ul>
       {filters.map(filter => (
         <li key={filter.id} ><input type={filter.type} placeholder={filter.placholder} className={filter.className} onChange={e => handleInputChange( filter.name , e.target.value)} /> </li>
